@@ -1,0 +1,9 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+products,product_id,Mã SKU,int64,0.0,2412,1,2412,536 | 537 | 538
+products,product_name,"Tên sản phẩm (thương hiệu + mã mẫu, vd. SaigonFlex UC-01)",str,0.0,2172,,,SaigonFlex UC-01 | SaigonFlex UC-02 | SaigonFlex UC-03
+products,category,"Danh mục: Streetwear, Outdoor, Casual, GenZ (4 danh mục của biến mục tiêu)",str,0.0,4,,,Streetwear | Casual | Outdoor
+products,segment,"Phân khúc: Activewear, Everyday, Performance, Balanced, Standard, Premium, All-weather, Trendy",str,0.0,8,,,Everyday | Performance | Balanced
+products,size,"Cỡ: S, M, L, XL",str,0.0,4,,,S | M | L
+products,color,Màu (8 màu),str,0.0,10,,,green | silver | pink
+products,price,Giá niêm yết,float64,0.0,1990,9.057,4.095e+04,"1.106e+04 | 9,523 | 1.595e+04"
+products,cogs,Giá vốn 1 đơn vị,float64,0.0,2381,5.184,3.89e+04,"9,705 | 5,394 | 1.137e+04"

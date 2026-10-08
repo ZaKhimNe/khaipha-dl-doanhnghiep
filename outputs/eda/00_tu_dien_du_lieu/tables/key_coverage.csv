@@ -1,0 +1,15 @@
+﻿bang_con,bang_cha,khoa,so_khoa_con,so_khoa_thieu_o_cha,pct_khop,ghi_chu
+order_items,orders,order_id,646945,0,100.0,
+order_items,products,product_id,1598,0,100.0,
+orders,customers,customer_id,90246,0,100.0,
+customers,geography,zip,31491,0,100.0,
+orders,geography,zip,29932,0,100.0,
+payments,orders,order_id,646945,0,100.0,
+shipments,orders,order_id,566067,0,100.0,
+returns,orders,order_id,36062,0,100.0,
+reviews,orders,order_id,111369,0,100.0,
+inventory,products,product_id,1624,0,100.0,
+orders,payments,order_id,646945,0,100.0,% đơn có bản ghi payments
+orders,shipments,order_id,646945,80878,87.4985,% đơn có bản ghi shipments
+orders,returns,order_id,646945,610883,5.5742,% đơn có bản ghi returns
+orders,reviews,order_id,646945,535576,17.2146,% đơn có bản ghi reviews

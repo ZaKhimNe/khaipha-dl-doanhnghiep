@@ -1,0 +1,5 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+geography,zip,Mã bưu chính,int64,0.0,39948,1,99950,15201 | 15202 | 15203
+geography,city,Thành phố (42 giá trị),str,0.0,42,,,Hai Phong | Phu Ly | Viet Tri
+geography,region,"Vùng: East, Central, West",str,0.0,3,,,East | Central | West
+geography,district,"Quận (39 giá trị, dạng 'District #n')",str,0.0,39,,,District #13 | District #04 | District #06

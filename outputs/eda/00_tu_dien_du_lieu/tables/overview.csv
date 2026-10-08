@@ -1,0 +1,14 @@
+﻿bang,so_dong,so_cot,tu_ngay,den_ngay,pct_o_trong,mot_dong_la,khoa_chinh
+sales,3833,3,2012-07-04,2022-12-31,0.0,1 ngày (2012-07-04 → 2022-12-31): doanh thu và giá vốn tổng của cả công ty,Date
+web_traffic,3652,7,2013-01-01,2022-12-31,0.0,1 ngày (2013-01-01 → 2022-12-31): chỉ số truy cập website,date
+orders,646945,8,2012-07-04,2022-12-31,0.0,1 đơn hàng,order_id
+order_items,714669,7,,,23.04,1 sản phẩm trong 1 đơn (1 đơn có 1–5 dòng),"(order_id, product_id) – có 16 dòng trùng"
+products,2412,8,,,0.0,1 SKU (sản phẩm × size × màu),product_id
+customers,121930,7,2012-01-17,2022-12-31,0.0,1 khách hàng,customer_id
+geography,39948,4,,,0.0,1 mã bưu chính (zip),zip
+payments,646945,4,,,0.0,1 lần thanh toán của 1 đơn (mỗi đơn đúng 1 dòng),order_id
+shipments,566067,4,2012-07-04,2022-12-31,0.0,1 lần giao hàng của 1 đơn (chỉ đơn đã giao/đang giao/đã trả),order_id
+returns,39939,7,2012-07-11,2022-12-31,0.0,1 lần trả 1 sản phẩm của 1 đơn,return_id
+reviews,113551,7,2012-07-10,2022-12-31,0.0,1 đánh giá của khách cho 1 sản phẩm trong 1 đơn,review_id
+promotions,50,10,2013-01-31,2022-12-31,8.0,"1 chiến dịch khuyến mãi, lên lịch trước (start_date → end_date)",promo_id
+inventory,60247,17,2012-07-31,2022-12-31,0.0,1 sản phẩm × 1 tháng (ảnh chụp tồn kho ngày cuối tháng),"(snapshot_date, product_id)"

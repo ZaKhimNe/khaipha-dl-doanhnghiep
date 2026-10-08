@@ -1,0 +1,26 @@
+# Dữ liệu BTC không được chia sẻ ra ngoài
+data/raw/
+
+# Kết quả sinh ra
+archive/outputs-cu/data/
+outputs/TuongVi/
+outputs/submission.csv
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+~$*
+.venv/
+
+# Tài liệu PDF có bản quyền, nặng -> để trên Drive nhóm
+docs/tai-lieu-tham-khao/
+docs/tai-lieu-mon-hoc/
+
+# Dữ liệu: chặn mọi thứ dưới data/ nhưng giữ cấu trúc thư mục
+data/**
+!data/README.md
+
+# Môi trường / hệ điều hành
+.env
+.DS_Store
+Thumbs.db

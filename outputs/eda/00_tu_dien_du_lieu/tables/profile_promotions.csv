@@ -1,0 +1,11 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+promotions,promo_id,Mã khuyến mãi (PROMO-xxxx),str,0.0,50,,,PROMO-0001 | PROMO-0002 | PROMO-0003
+promotions,promo_name,"Tên chiến dịch + năm (Spring Sale, Mid-Year Sale, Fall Launch, Year-End Sale, Urban Blowout, Rural Special)",str,0.0,50,,,Spring Sale 2013 | Mid-Year Sale 2013 | Fall Launch 2013
+promotions,promo_type,Loại: percentage (giảm %) hoặc fixed (giảm số tiền),str,0.0,2,,,percentage | fixed
+promotions,discount_value,Mức giảm (% hoặc số tiền tuỳ promo_type),float64,0.0,6,10,50,12 | 18 | 10
+promotions,start_date,Ngày bắt đầu,datetime64[us],0.0,50,2013-01-31,2022-11-18,2013-03-18 | 2013-06-23 | 2013-08-30
+promotions,end_date,Ngày kết thúc,datetime64[us],0.0,50,2013-03-01,2022-12-31,2013-04-17 | 2013-07-22 | 2013-10-02
+promotions,applicable_category,Danh mục áp dụng (trống = mọi danh mục),str,80.0,2,,,Streetwear | Outdoor
+promotions,promo_channel,"Kênh áp dụng: all_channels, online, email, social_media, in_store",str,0.0,5,,,email | online | all_channels
+promotions,stackable_flag,1 = được cộng dồn với khuyến mãi khác,int64,0.0,2,0,1,1 | 0
+promotions,min_order_value,Giá trị đơn tối thiểu (0 = không yêu cầu),int64,0.0,5,0,200000,0 | 50000 | 150000

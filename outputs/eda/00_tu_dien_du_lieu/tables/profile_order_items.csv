@@ -1,0 +1,8 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+order_items,order_id,Mã đơn,int64,0.0,646945,1,834397,1 | 2 | 3
+order_items,product_id,Mã sản phẩm (SKU),int64,0.0,1598,1,2412,2400 | 609 | 396
+order_items,quantity,Số lượng mua (1–8),int64,0.0,8,1,8,7 | 3 | 5
+order_items,unit_price,Đơn giá bán thực tế của dòng (khác products.price ở hầu hết dòng),float64,0.0,501330,392.6,4.306e+04,"1,138 | 1.017e+04 | 1.122e+04"
+order_items,discount_amount,Tiền chiết khấu của cả dòng (không phải mỗi đơn vị),float64,0.0,204449,0,3.524e+04,"0 | 1,128 | 1,312"
+order_items,promo_id,Mã khuyến mãi áp dụng (trống = không có khuyến mãi),str,61.34,50,,,PROMO-0006 | PROMO-0001 | PROMO-0002
+order_items,promo_id_2,Mã khuyến mãi thứ 2 khi cộng dồn (gần như luôn trống),str,99.97,2,,,PROMO-0015 | PROMO-0025

@@ -1,0 +1,10 @@
+﻿bang,khoa,so_dong_trung
+orders,order_id,0
+products,product_id,0
+customers,customer_id,0
+sales,Date,0
+geography,zip,0
+payments,order_id,0
+shipments,order_id,0
+order_items,"order_id, product_id",16
+inventory,"snapshot_date, product_id",0

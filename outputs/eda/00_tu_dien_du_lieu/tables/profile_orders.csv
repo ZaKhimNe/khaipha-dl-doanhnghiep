@@ -1,0 +1,9 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+orders,order_id,Mã đơn hàng,int64,0.0,646945,1,834397,1 | 2 | 3
+orders,order_date,Ngày đặt hàng,datetime64[us],0.0,3833,2012-07-04,2022-12-31,2012-07-04 | 2012-07-06 | 2012-07-05
+orders,customer_id,Mã khách đặt đơn,int64,0.0,90246,1,157563,58578 | 58621 | 58811
+orders,zip,Mã bưu chính giao hàng,int64,0.0,29932,1001,99950,1109 | 1330 | 1473
+orders,order_status,"Trạng thái đơn: created, paid, shipped, delivered, returned, cancelled",str,0.0,6,,,delivered | returned | shipped
+orders,payment_method,"Phương thức thanh toán: credit_card, paypal, cod, apple_pay, bank_transfer",str,0.0,5,,,credit_card | cod | paypal
+orders,device_type,"Thiết bị đặt hàng: mobile, desktop, tablet",str,0.0,3,,,desktop | mobile | tablet
+orders,order_source,"Kênh dẫn tới đơn: organic_search, paid_search, social_media, email_campaign, referral, direct",str,0.0,6,,,paid_search | direct | referral

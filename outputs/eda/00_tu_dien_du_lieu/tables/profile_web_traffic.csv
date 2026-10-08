@@ -1,0 +1,8 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+web_traffic,date,Ngày,datetime64[us],0.0,3652,2013-01-01,2022-12-31,2013-01-01 | 2013-01-02 | 2013-01-03
+web_traffic,sessions,Số phiên truy cập trong ngày,int64,0.0,3447,7973,50947,9760 | 10456 | 10076
+web_traffic,unique_visitors,Số người truy cập khác nhau trong ngày,int64,0.0,3382,6136,40430,7253 | 8151 | 7458
+web_traffic,page_views,Số lượt xem trang,int64,0.0,3620,30451,275560,39093 | 47611 | 36963
+web_traffic,bounce_rate,"Tỷ lệ thoát (dạng tỷ số, khoảng 0.003–0.006)",float64,0.0,261,0.0032,0.0058,0.00514 | 0.00406 | 0.00401
+web_traffic,avg_session_duration_sec,Thời lượng phiên trung bình (giây),float64,0.0,1771,100.1,319.9,102.9 | 120.5 | 263.6
+web_traffic,traffic_source,"Nguồn truy cập ghi cho ngày đó (1 giá trị/ngày): organic_search, paid_search, social_media, email_campaign, referral, direct",str,0.0,6,,,organic_search | direct | referral

@@ -1,0 +1,2 @@
+# Giữ nguyên từng byte file của Quyền (có SHA-256 đối soát), không đổi xuống dòng CRLF/LF
+notebooks/thanh-vien/Quyen/** -text

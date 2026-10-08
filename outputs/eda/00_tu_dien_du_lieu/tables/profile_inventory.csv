@@ -1,0 +1,18 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+inventory,snapshot_date,Ngày chụp tồn kho (ngày cuối tháng),datetime64[us],0.0,126,2012-07-31,2022-12-31,2022-10-31 | 2022-11-30 | 2022-12-31
+inventory,product_id,Mã sản phẩm,int64,0.0,1624,1,2412,1 | 3 | 4
+inventory,stock_on_hand,Tồn kho cuối tháng,int64,0.0,1895,3,2673,3 | 35 | 36
+inventory,units_received,Số lượng nhập trong tháng,int64,0.0,360,1,817,1 | 13 | 11
+inventory,units_sold,Số lượng bán trong tháng,int64,0.0,303,1,670,1 | 11 | 10
+inventory,stockout_days,Số ngày hết hàng trong tháng (0–28),int64,0.0,29,0,28,2 | 1 | 0
+inventory,days_of_supply,"Số ngày tồn kho còn đủ bán (có giá trị rất lớn, tới 68,100)",float64,0.0,9289,5.2,6.81e+04,90 | 95.5 | 108
+inventory,fill_rate,Tỷ lệ đáp ứng đơn (0–1),float64,0.0,29,0.0667,1,0.9333 | 0.9667 | 1
+inventory,stockout_flag,1 = có hết hàng trong tháng,int64,0.0,2,0,1,1 | 0
+inventory,overstock_flag,1 = tồn kho dư,int64,0.0,2,0,1,0 | 1
+inventory,reorder_flag,1 = cần đặt hàng lại (luôn bằng 0 trong dữ liệu),int64,0.0,1,0,0,0
+inventory,sell_through_rate,Tỷ lệ bán hết = bán / (tồn + bán),float64,0.0,4017,0.0004,0.8531,0.25 | 0.2391 | 0.2174
+inventory,product_name,Tên sản phẩm (lặp lại từ products),str,0.0,1465,,,DragonWear MA-01 | DragonWear MA-03 | DragonWear MA-04
+inventory,category,Danh mục (lặp lại từ products),str,0.0,4,,,Casual | Outdoor | Streetwear
+inventory,segment,Phân khúc (lặp lại từ products),str,0.0,8,,,All-weather | Activewear | Premium
+inventory,year,Năm của snapshot_date,int64,0.0,11,2012,2022,2022 | 2016 | 2017
+inventory,month,Tháng của snapshot_date,int64,0.0,12,1,12,10 | 11 | 12

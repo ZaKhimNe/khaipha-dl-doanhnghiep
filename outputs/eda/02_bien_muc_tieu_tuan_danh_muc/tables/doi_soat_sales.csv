@@ -1,0 +1,4 @@
+﻿,dinh_nghia,lech_tuyet_doi_max_trieu,lech_tuyet_doi_tb_trieu,lech_pct_tb,lech_pct_max,tong_ky_ty_le_so_voi_sales_pct
+gross_all,"Doanh thu gộp, gồm đơn huỷ, trước chiết khấu (= sales.Revenue)",1.862645149230957e-15,2.334077089068599e-17,2.626061083047256e-17,2.2147200979487967e-14,100.0
+gross_excl_cancelled,"Doanh thu gộp, bỏ đơn huỷ, trước chiết khấu",1.8903676400000007,0.3954842176337073,9.206428674126334,30.85534947758235,90.7739072673947
+net_excl_cancelled,"Doanh thu net, bỏ đơn huỷ, sau chiết khấu",3.7387527699999996,0.573081387302374,13.903301583259497,39.927053771294744,86.63081410879755

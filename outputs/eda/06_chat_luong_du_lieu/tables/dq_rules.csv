@@ -1,0 +1,159 @@
+﻿bang,cot,khia_canh,quy_tac,so_kiem_tra,so_vi_pham,diem
+sales,Date,Đầy đủ,giá trị không trống,3833,0,1.0
+sales,Revenue,Đầy đủ,giá trị không trống,3833,0,1.0
+sales,COGS,Đầy đủ,giá trị không trống,3833,0,1.0
+web_traffic,date,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,sessions,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,unique_visitors,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,page_views,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,bounce_rate,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,avg_session_duration_sec,Đầy đủ,giá trị không trống,3652,0,1.0
+web_traffic,traffic_source,Đầy đủ,giá trị không trống,3652,0,1.0
+orders,order_id,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,order_date,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,customer_id,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,zip,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,order_status,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,payment_method,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,device_type,Đầy đủ,giá trị không trống,646945,0,1.0
+orders,order_source,Đầy đủ,giá trị không trống,646945,0,1.0
+order_items,order_id,Đầy đủ,giá trị không trống,714669,0,1.0
+order_items,product_id,Đầy đủ,giá trị không trống,714669,0,1.0
+order_items,quantity,Đầy đủ,giá trị không trống,714669,0,1.0
+order_items,unit_price,Đầy đủ,giá trị không trống,714669,0,1.0
+order_items,discount_amount,Đầy đủ,giá trị không trống,714669,0,1.0
+order_items,promo_id,Đầy đủ,giá trị không trống,714669,438353,0.386635
+order_items,promo_id_2,Đầy đủ,giá trị không trống,714669,714463,0.000288
+products,product_id,Đầy đủ,giá trị không trống,2412,0,1.0
+products,product_name,Đầy đủ,giá trị không trống,2412,0,1.0
+products,category,Đầy đủ,giá trị không trống,2412,0,1.0
+products,segment,Đầy đủ,giá trị không trống,2412,0,1.0
+products,size,Đầy đủ,giá trị không trống,2412,0,1.0
+products,color,Đầy đủ,giá trị không trống,2412,0,1.0
+products,price,Đầy đủ,giá trị không trống,2412,0,1.0
+products,cogs,Đầy đủ,giá trị không trống,2412,0,1.0
+customers,customer_id,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,zip,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,city,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,signup_date,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,gender,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,age_group,Đầy đủ,giá trị không trống,121930,0,1.0
+customers,acquisition_channel,Đầy đủ,giá trị không trống,121930,0,1.0
+geography,zip,Đầy đủ,giá trị không trống,39948,0,1.0
+geography,city,Đầy đủ,giá trị không trống,39948,0,1.0
+geography,region,Đầy đủ,giá trị không trống,39948,0,1.0
+geography,district,Đầy đủ,giá trị không trống,39948,0,1.0
+payments,order_id,Đầy đủ,giá trị không trống,646945,0,1.0
+payments,payment_method,Đầy đủ,giá trị không trống,646945,0,1.0
+payments,payment_value,Đầy đủ,giá trị không trống,646945,0,1.0
+payments,installments,Đầy đủ,giá trị không trống,646945,0,1.0
+shipments,order_id,Đầy đủ,giá trị không trống,566067,0,1.0
+shipments,ship_date,Đầy đủ,giá trị không trống,566067,0,1.0
+shipments,delivery_date,Đầy đủ,giá trị không trống,566067,0,1.0
+shipments,shipping_fee,Đầy đủ,giá trị không trống,566067,0,1.0
+returns,return_id,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,order_id,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,product_id,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,return_date,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,return_reason,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,return_quantity,Đầy đủ,giá trị không trống,39939,0,1.0
+returns,refund_amount,Đầy đủ,giá trị không trống,39939,0,1.0
+reviews,review_id,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,order_id,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,product_id,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,customer_id,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,review_date,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,rating,Đầy đủ,giá trị không trống,113551,0,1.0
+reviews,review_title,Đầy đủ,giá trị không trống,113551,0,1.0
+promotions,promo_id,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,promo_name,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,promo_type,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,discount_value,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,start_date,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,end_date,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,applicable_category,Đầy đủ,giá trị không trống,50,40,0.2
+promotions,promo_channel,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,stackable_flag,Đầy đủ,giá trị không trống,50,0,1.0
+promotions,min_order_value,Đầy đủ,giá trị không trống,50,0,1.0
+inventory,snapshot_date,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,product_id,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,stock_on_hand,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,units_received,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,units_sold,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,stockout_days,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,days_of_supply,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,fill_rate,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,stockout_flag,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,overstock_flag,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,reorder_flag,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,sell_through_rate,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,product_name,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,category,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,segment,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,year,Đầy đủ,giá trị không trống,60247,0,1.0
+inventory,month,Đầy đủ,giá trị không trống,60247,0,1.0
+order_items,quantity,Hợp lệ,quantity > 0,714669,0,1.0
+order_items,unit_price,Hợp lệ,unit_price > 0,714669,0,1.0
+order_items,discount_amount,Hợp lệ,0 <= discount_amount <= quantity*unit_price,714669,0,1.0
+orders,order_status,Hợp lệ,"order_status thuộc ['cancelled', 'created', 'delivered', 'paid', 'returned', 'shipped']",646945,0,1.0
+reviews,rating,Hợp lệ,"rating thuộc [1, 5]",113551,0,1.0
+products,price,Hợp lệ,price > 0,2412,0,1.0
+products,cogs,Hợp lệ,cogs > 0,2412,0,1.0
+payments,payment_value,Hợp lệ,payment_value >= 0,646945,0,1.0
+payments,installments,Hợp lệ,installments >= 1,646945,0,1.0
+shipments,shipping_fee,Hợp lệ,shipping_fee >= 0,566067,0,1.0
+returns,return_quantity,Hợp lệ,return_quantity > 0,39939,0,1.0
+returns,refund_amount,Hợp lệ,refund_amount >= 0,39939,0,1.0
+inventory,stock_on_hand,Hợp lệ,stock_on_hand >= 0,60247,0,1.0
+inventory,stockout_days,Hợp lệ,"stockout_days thuộc [0, 31]",60247,0,1.0
+inventory,fill_rate,Hợp lệ,"fill_rate thuộc [0, 1]",60247,0,1.0
+inventory,sell_through_rate,Hợp lệ,"sell_through_rate thuộc [0, 1]",60247,0,1.0
+web_traffic,sessions,Hợp lệ,sessions >= 0,3652,0,1.0
+web_traffic,bounce_rate,Hợp lệ,"bounce_rate thuộc [0, 1]",3652,0,1.0
+sales,Revenue,Hợp lệ,Revenue > 0,3833,0,1.0
+sales,COGS,Hợp lệ,COGS > 0,3833,0,1.0
+promotions,discount_value,Hợp lệ,discount_value > 0,50,0,1.0
+promotions,end_date,Hợp lệ,end_date >= start_date,50,0,1.0
+order_items,unit_price,Chính xác,unit_price = products.price (±0.01),714669,714593,0.000106
+sales,Revenue,Chính xác,Revenue = SUM(quantity*unit_price) theo ngày (±0.01%),3833,0,1.0
+sales,COGS,Chính xác,COGS = SUM(quantity*products.cogs) theo ngày (±0.01%),3833,0,1.0
+payments,payment_value,Chính xác,payment_value = tiền hàng net của đơn (±1),646945,0,1.0
+order_items,order_id,Nhất quán,order_id có trong orders.order_id,714669,0,1.0
+order_items,product_id,Nhất quán,product_id có trong products.product_id,714669,0,1.0
+orders,customer_id,Nhất quán,customer_id có trong customers.customer_id,646945,0,1.0
+customers,zip,Nhất quán,zip có trong geography.zip,121930,0,1.0
+payments,order_id,Nhất quán,order_id có trong orders.order_id,646945,0,1.0
+shipments,order_id,Nhất quán,order_id có trong orders.order_id,566067,0,1.0
+returns,order_id,Nhất quán,order_id có trong orders.order_id,39939,0,1.0
+reviews,order_id,Nhất quán,order_id có trong orders.order_id,113551,0,1.0
+inventory,product_id,Nhất quán,product_id có trong products.product_id,60247,0,1.0
+returns,"order_id, product_id",Nhất quán,"(order_id, product_id) có trong order_items",39939,0,1.0
+returns,return_quantity,Nhất quán,return_quantity <= số lượng đã mua trong đơn,39939,0,1.0
+shipments,ship_date,Nhất quán,ship_date >= orders.order_date,566067,0,1.0
+shipments,delivery_date,Nhất quán,delivery_date >= ship_date,566067,0,1.0
+returns,return_date,Nhất quán,return_date >= orders.order_date,39939,0,1.0
+reviews,review_date,Nhất quán,review_date >= orders.order_date,113551,0,1.0
+orders,order_date,Nhất quán,order_date >= customers.signup_date,646945,477453,0.261988
+orders,order_status,Nhất quán,đơn shipped/delivered/returned có bản ghi shipments,566631,564,0.999005
+orders,order_id,Duy nhất,khoá order_id không trùng,646945,0,1.0
+products,product_id,Duy nhất,khoá product_id không trùng,2412,0,1.0
+customers,customer_id,Duy nhất,khoá customer_id không trùng,121930,0,1.0
+sales,Date,Duy nhất,khoá Date không trùng,3833,0,1.0
+geography,zip,Duy nhất,khoá zip không trùng,39948,0,1.0
+payments,order_id,Duy nhất,khoá order_id không trùng,646945,0,1.0
+shipments,order_id,Duy nhất,khoá order_id không trùng,566067,0,1.0
+returns,return_id,Duy nhất,khoá return_id không trùng,39939,0,1.0
+reviews,review_id,Duy nhất,khoá review_id không trùng,113551,0,1.0
+promotions,promo_id,Duy nhất,khoá promo_id không trùng,50,0,1.0
+web_traffic,date,Duy nhất,khoá date không trùng,3652,0,1.0
+inventory,"snapshot_date, product_id",Duy nhất,"khoá snapshot_date, product_id không trùng",60247,0,1.0
+order_items,"order_id, product_id",Duy nhất,"khoá order_id, product_id không trùng",714669,16,0.999978
+orders,order_date,Kịp thời,"order_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",646945,0,1.0
+web_traffic,date,Kịp thời,"date nằm trong khoảng sales [2012-07-04, 2022-12-31]",3652,0,1.0
+shipments,delivery_date,Kịp thời,"delivery_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",566067,0,1.0
+returns,return_date,Kịp thời,"return_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",39939,0,1.0
+reviews,review_date,Kịp thời,"review_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",113551,0,1.0
+inventory,snapshot_date,Kịp thời,"snapshot_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",60247,0,1.0
+promotions,start_date,Kịp thời,"start_date nằm trong khoảng sales [2012-07-04, 2022-12-31]",50,0,1.0
+web_traffic,date,Kịp thời,mọi ngày của sales có dữ liệu traffic,3833,181,0.952779
+sales,Date,Kịp thời,chuỗi ngày liên tục (không thiếu ngày),3833,0,1.0

@@ -1,0 +1,526 @@
+{
+  "thong_tin_chung": {
+    "nguoi_thuc_hien": "Nguyễn Văn Quyền",
+    "pham_vi": "Phần 3 (phát biểu bài toán) + Phần 4.1 kiểm chứng nhanh PA1",
+    "thoi_diem_chay": "2026-09-29T16:21:43",
+    "python": "3.14.3",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "file_da_dung": {
+      "order_items": {
+        "sha256_16": "a8b2adfe54eec0dd",
+        "dung_luong_byte": 23942735
+      },
+      "orders": {
+        "sha256_16": "f4b3029f386f5f5a",
+        "dung_luong_byte": 45963232
+      },
+      "products": {
+        "sha256_16": "890946808d8237da",
+        "dung_luong_byte": 195223
+      },
+      "promotions": {
+        "sha256_16": "158ee5843ee41a28",
+        "dung_luong_byte": 4444
+      },
+      "sales": {
+        "sha256_16": "081d539f50d41f20",
+        "dung_luong_byte": 129634
+      },
+      "web_traffic": {
+        "sha256_16": "9bc9b72e44a814e5",
+        "dung_luong_byte": 208722
+      },
+      "inventory": {
+        "sha256_16": "1bbcdd89569a5df4",
+        "dung_luong_byte": 5668678
+      },
+      "returns": {
+        "sha256_16": "501717bc76cf237c",
+        "dung_luong_byte": 2281456
+      }
+    },
+    "tong_thoi_gian_chay_giay": 2.96
+  },
+  "viec_1_ten_cot_that": {
+    "ghi_chu": "Thay tên cột giả định trong bản đề xuất bằng tên cột thật trong file CSV.",
+    "cau_truc_thuc_te": {
+      "order_items": [
+        "order_id",
+        "product_id",
+        "quantity",
+        "unit_price",
+        "discount_amount",
+        "promo_id",
+        "promo_id_2"
+      ],
+      "orders": [
+        "order_id",
+        "order_date",
+        "customer_id",
+        "zip",
+        "order_status",
+        "payment_method",
+        "device_type",
+        "order_source"
+      ],
+      "products": [
+        "product_id",
+        "product_name",
+        "category",
+        "segment",
+        "size",
+        "color",
+        "price",
+        "cogs"
+      ],
+      "promotions": [
+        "promo_id",
+        "promo_name",
+        "promo_type",
+        "discount_value",
+        "start_date",
+        "end_date",
+        "applicable_category",
+        "promo_channel",
+        "stackable_flag",
+        "min_order_value"
+      ],
+      "web_traffic": [
+        "date",
+        "sessions",
+        "unique_visitors",
+        "page_views",
+        "bounce_rate",
+        "avg_session_duration_sec",
+        "traffic_source"
+      ],
+      "inventory": [
+        "snapshot_date",
+        "product_id",
+        "stock_on_hand",
+        "units_received",
+        "units_sold",
+        "stockout_days",
+        "days_of_supply",
+        "fill_rate",
+        "stockout_flag",
+        "overstock_flag",
+        "reorder_flag",
+        "sell_through_rate",
+        "product_name",
+        "category",
+        "segment",
+        "year",
+        "month"
+      ],
+      "returns": [
+        "return_id",
+        "order_id",
+        "product_id",
+        "return_date",
+        "return_reason",
+        "return_quantity",
+        "refund_amount"
+      ]
+    },
+    "sua_ten_cot": [
+      {
+        "trong_de_xuat": "discount",
+        "ten_that": "order_items.discount_amount"
+      },
+      {
+        "trong_de_xuat": "unit_price",
+        "ten_that": "order_items.unit_price",
+        "trang_thai": "đúng, giữ nguyên"
+      },
+      {
+        "trong_de_xuat": "quantity",
+        "ten_that": "order_items.quantity",
+        "trang_thai": "đúng, giữ nguyên"
+      },
+      {
+        "trong_de_xuat": "order_date",
+        "ten_that": "orders.order_date (KHÔNG nằm trong order_items, phải nối qua order_id)"
+      },
+      {
+        "trong_de_xuat": "category",
+        "ten_that": "products.category (nối qua product_id)"
+      },
+      {
+        "trong_de_xuat": "traffic",
+        "ten_that": "web_traffic.date + sessions / unique_visitors / page_views / bounce_rate"
+      },
+      {
+        "trong_de_xuat": "tồn kho snapshot",
+        "ten_that": "inventory.snapshot_date + stock_on_hand / fill_rate / days_of_supply / stockout_flag"
+      },
+      {
+        "trong_de_xuat": "phí ship",
+        "ten_that": "shipments.shipping_fee - KHÔNG có trong order_items nên biến mục tiêu vốn đã không gồm phí ship"
+      }
+    ],
+    "cong_thuc_bien_muc_tieu": "revenue_net(danh_mục, tuần) = TỔNG(order_items.quantity * order_items.unit_price - order_items.discount_amount) trên các dòng có orders.order_date thuộc tuần đó và products.category = danh_mục, loại bỏ orders.order_status == 'cancelled'."
+  },
+  "viec_1_quy_tac_don_huy_tra": {
+    "cac_trang_thai_don_trong_du_lieu": {
+      "delivered": 516716,
+      "cancelled": 59462,
+      "returned": 36142,
+      "shipped": 13773,
+      "paid": 13577,
+      "created": 7275
+    },
+    "doanh_thu_theo_trang_thai": {
+      "cancelled": {
+        "doanh_thu": 1447013637.43,
+        "so_dong": 65673,
+        "ty_trong_phan_tram": 9.228
+      },
+      "created": {
+        "doanh_thu": 181835018.77,
+        "so_dong": 7994,
+        "ty_trong_phan_tram": 1.16
+      },
+      "delivered": {
+        "doanh_thu": 12518175957.2,
+        "so_dong": 570887,
+        "ty_trong_phan_tram": 79.831
+      },
+      "paid": {
+        "doanh_thu": 330627096.24,
+        "so_dong": 14987,
+        "ty_trong_phan_tram": 2.108
+      },
+      "returned": {
+        "doanh_thu": 865938715.59,
+        "so_dong": 40034,
+        "ty_trong_phan_tram": 5.522
+      },
+      "shipped": {
+        "doanh_thu": 337278840.2,
+        "so_dong": 15094,
+        "ty_trong_phan_tram": 2.151
+      }
+    },
+    "bang_returns": {
+      "so_dong": 39939,
+      "so_don_bi_tra": 36062,
+      "tong_tien_hoan": 510598506.55,
+      "khoang_ngay_tra": [
+        "2012-07-11",
+        "2022-12-31"
+      ]
+    },
+    "quy_tac_chot": "LOẠI đơn có order_status == 'cancelled' khỏi biến mục tiêu, vì đơn hủy không phát sinh doanh thu và không tiêu tốn hàng nhập. GIỮ đơn 'returned': tại mốc cắt đầu tuần, việc trả hàng chưa xảy ra nên không biết trước - loại trừ sẽ gây rò rỉ thông tin tương lai (look-ahead). GIỮ 'created'/'paid'/'shipped'/'delivered'. Cột refund_amount trong returns.csv chỉ dùng để báo cáo, KHÔNG trừ vào nhãn.",
+    "anh_huong_cua_quy_tac": {
+      "doanh_thu_giu_tat_ca": 15680869265.43,
+      "doanh_thu_loai_cancelled": 14233855628.0,
+      "doanh_thu_loai_cancelled_va_returned": 13367916912.41,
+      "chenh_lech_phan_tram_khi_loai_cancelled": -9.228
+    }
+  },
+  "viec_2_bang_khuyen_mai": {
+    "ket_luan": "CÓ - promotions.csv là bảng khuyến mãi lên lịch trước, có start_date/end_date/discount_value.",
+    "so_dong": 50,
+    "cac_cot": [
+      "promo_id",
+      "promo_name",
+      "promo_type",
+      "discount_value",
+      "start_date",
+      "end_date",
+      "applicable_category",
+      "promo_channel",
+      "stackable_flag",
+      "min_order_value"
+    ],
+    "khoang_thoi_gian": [
+      "2013-01-31",
+      "2022-12-31"
+    ],
+    "do_dai_chien_dich_ngay": {
+      "nho_nhat": 29,
+      "trung_vi": 30.5,
+      "lon_nhat": 45
+    },
+    "loai_khuyen_mai": {
+      "percentage": 45,
+      "fixed": 5
+    },
+    "danh_muc_ap_dung": {
+      "nan": 40,
+      "Streetwear": 5,
+      "Outdoor": 5
+    },
+    "ty_le_thieu_danh_muc_ap_dung_phan_tram": 80.0,
+    "lien_ket_voi_order_items": {
+      "cot_khoa": [
+        "order_items.promo_id",
+        "order_items.promo_id_2"
+      ],
+      "ty_le_dong_co_promo_id_phan_tram": 38.66,
+      "ty_le_dong_co_promo_id_2_phan_tram": 0.03,
+      "so_promo_id_khop_bang_promotions": 276316
+    },
+    "sua_o_muc_dau_vao": "Đặc trưng chiết khấu KẾ HOẠCH là hợp lệ và biết trước: lấy từ promotions.csv (số chiến dịch đang chạy trong tuần t+h, tổng discount_value, có khuyến mãi theo danh mục) vì start_date/end_date đã biết từ trước mốc cắt. Riêng order_items.discount_amount là chiết khấu THỰC TẾ -> chỉ được dùng bản trễ (lag)."
+  },
+  "viec_3_chuoi_tuan": {
+    "dinh_nghia_tuan": "Thứ 2 -> Chủ nhật, nhãn theo ngày Thứ 2; mốc cắt = cuối ngày Chủ nhật.",
+    "khoang_tuan": [
+      "2012-07-09",
+      "2022-12-19"
+    ],
+    "so_tuan": 546,
+    "so_danh_muc": 4,
+    "danh_muc": [
+      "Casual",
+      "GenZ",
+      "Outdoor",
+      "Streetwear"
+    ],
+    "so_mau_tong": 2184,
+    "chia_du_lieu": {
+      "quy_tac": "train <= 2020-12-31, validation = năm 2021, test = năm 2022 (chia theo thời gian, không xáo trộn)",
+      "train": {
+        "so_tuan": 443,
+        "tu_ngay": "2012-07-09",
+        "den_ngay": "2020-12-28",
+        "so_mau": 1772
+      },
+      "validation": {
+        "so_tuan": 52,
+        "tu_ngay": "2021-01-04",
+        "den_ngay": "2021-12-27",
+        "so_mau": 208
+      },
+      "test": {
+        "so_tuan": 51,
+        "tu_ngay": "2022-01-03",
+        "den_ngay": "2022-12-19",
+        "so_mau": 204
+      }
+    },
+    "thong_ke_theo_danh_muc": {
+      "Casual": {
+        "doanh_thu_tuan_trung_binh": 729593.5803663003,
+        "doanh_thu_tuan_trung_vi": 623414.4650000001,
+        "do_lech_chuan": 469714.81423761416,
+        "nho_nhat": 51314.700000000004,
+        "lon_nhat": 4425906.66,
+        "do_lech_skewness": 1.9668535558393723,
+        "so_tuan_bang_0": 0,
+        "ty_le_tuan_bang_0_phan_tram": 0.0,
+        "ty_trong_doanh_thu_phan_tram": 2.8
+      },
+      "GenZ": {
+        "doanh_thu_tuan_trung_binh": 547310.9316300366,
+        "doanh_thu_tuan_trung_vi": 441704.675,
+        "do_lech_chuan": 443991.88025670353,
+        "nho_nhat": 56644.8,
+        "lon_nhat": 4751828.39,
+        "do_lech_skewness": 3.095774493302135,
+        "so_tuan_bang_0": 0,
+        "ty_le_tuan_bang_0_phan_tram": 0.0,
+        "ty_trong_doanh_thu_phan_tram": 2.1
+      },
+      "Outdoor": {
+        "doanh_thu_tuan_trung_binh": 3900324.152326007,
+        "doanh_thu_tuan_trung_vi": 3505559.275,
+        "do_lech_chuan": 2325733.2744394992,
+        "nho_nhat": 573152.86,
+        "lon_nhat": 15910804.48,
+        "do_lech_skewness": 1.1266567563544856,
+        "so_tuan_bang_0": 0,
+        "ty_le_tuan_bang_0_phan_tram": 0.0,
+        "ty_trong_doanh_thu_phan_tram": 14.99
+      },
+      "Streetwear": {
+        "doanh_thu_tuan_trung_binh": 20843845.82701465,
+        "doanh_thu_tuan_trung_vi": 18290517.78,
+        "do_lech_chuan": 12082057.4181539,
+        "nho_nhat": 2681000.65,
+        "lon_nhat": 82404491.62,
+        "do_lech_skewness": 1.3880566251917286,
+        "so_tuan_bang_0": 0,
+        "ty_le_tuan_bang_0_phan_tram": 0.0,
+        "ty_trong_doanh_thu_phan_tram": 80.1
+      }
+    }
+  },
+  "viec_3_baseline_validation_2021": {
+    "thiet_ke": "Rolling origin: mỗi tuần t trong lịch sử làm mốc cắt, dự báo h = 1..4 tuần; chỉ chấm điểm các tuần mục tiêu rơi vào năm 2021.",
+    "do_do": "WMAPE = tổng|thật - dự báo| / tổng|thật| (chính), MAE (phụ).",
+    "baseline_1_seasonal_naive": "dự báo(t+h) = doanh thu(t+h-52) - cùng kỳ năm trước.",
+    "baseline_2_trung_binh_4_tuan": "dự báo(t+h) = trung bình 4 tuần gần nhất trước mốc cắt t.",
+    "tong_the": {
+      "so_mau": 832,
+      "seasonal_naive": {
+        "WMAPE": 0.189,
+        "MAE": 819889.26
+      },
+      "trung_binh_4_tuan": {
+        "WMAPE": 0.3212,
+        "MAE": 1393087.76
+      }
+    },
+    "theo_danh_muc": {
+      "Casual": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.2688,
+          "MAE": 201151.71
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3628,
+          "MAE": 271485.04
+        }
+      },
+      "GenZ": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.2672,
+          "MAE": 119229.4
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.342,
+          "MAE": 152585.42
+        }
+      },
+      "Outdoor": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.2811,
+          "MAE": 481938.57
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3474,
+          "MAE": 595615.03
+        }
+      },
+      "Streetwear": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.1716,
+          "MAE": 2477237.34
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3153,
+          "MAE": 4552665.56
+        }
+      }
+    },
+    "theo_horizon": {
+      "h1": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.189,
+          "MAE": 819889.26
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.2875,
+          "MAE": 1247047.85
+        }
+      },
+      "h2": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.189,
+          "MAE": 819889.26
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3007,
+          "MAE": 1304002.94
+        }
+      },
+      "h3": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.189,
+          "MAE": 819889.26
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3338,
+          "MAE": 1447631.65
+        }
+      },
+      "h4": {
+        "so_mau": 208,
+        "seasonal_naive": {
+          "WMAPE": 0.189,
+          "MAE": 819889.26
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3629,
+          "MAE": 1573668.61
+        }
+      }
+    },
+    "thoi_gian_chay_baseline_giay": 0.043
+  },
+  "viec_3_baseline_test_2022_tham_khao": {
+    "canh_bao": "Chỉ để tham khảo. Việc chọn mô hình phải dựa trên validation 2021.",
+    "tong_the": {
+      "so_mau": 816,
+      "seasonal_naive": {
+        "WMAPE": 0.1774,
+        "MAE": 866316.48
+      },
+      "trung_binh_4_tuan": {
+        "WMAPE": 0.2875,
+        "MAE": 1404036.41
+      }
+    },
+    "theo_danh_muc": {
+      "Casual": {
+        "so_mau": 204,
+        "seasonal_naive": {
+          "WMAPE": 0.2354,
+          "MAE": 214993.16
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.3351,
+          "MAE": 306147.79
+        }
+      },
+      "GenZ": {
+        "so_mau": 204,
+        "seasonal_naive": {
+          "WMAPE": 0.2054,
+          "MAE": 101039.23
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.317,
+          "MAE": 155930.78
+        }
+      },
+      "Outdoor": {
+        "so_mau": 204,
+        "seasonal_naive": {
+          "WMAPE": 0.2261,
+          "MAE": 388880.59
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.2481,
+          "MAE": 426647.59
+        }
+      },
+      "Streetwear": {
+        "so_mau": 204,
+        "seasonal_naive": {
+          "WMAPE": 0.1682,
+          "MAE": 2760352.93
+        },
+        "trung_binh_4_tuan": {
+          "WMAPE": 0.2881,
+          "MAE": 4727419.49
+        }
+      }
+    }
+  },
+  "ket_luan_PA1": {
+    "du_lieu": "ĐẠT - nhãn tạo được từ order_items + orders + products; số mẫu = 2184 (tuần x danh mục).",
+    "ky_thuat": "ĐẠT - baseline chạy 0.04 giây, cả pipeline 3.0 giây, rất xa ngưỡng 10 phút trên Colab.",
+    "rui_ro": "Casual và GenZ tỷ trọng doanh thu nhỏ -> WMAPE cao hơn, xem mục theo_danh_muc."
+  }
+}

@@ -1,0 +1,12 @@
+﻿bang,cot,loai_loi,so_dong,pct,muc_do,mo_ta
+order_items,promo_id,Giá trị trống (NULL),438353,61.337,HIGH,"438,353 dòng trống"
+order_items,promo_id_2,Giá trị trống (NULL),714463,99.971,HIGH,"714,463 dòng trống"
+promotions,applicable_category,Giá trị trống (NULL),40,80.0,HIGH,40 dòng trống
+orders vs shipments,order_status / order_id,Đơn đã giao nhưng không có shipment,564,0.087,HIGH,Đơn delivered/returned/shipped không có trong shipments.csv (đơn cancelled/paid/created không có shipment là bình thường)
+sales,Revenue vs COGS,Ngày lỗ gộp (COGS > Revenue),382,9.966,CRITICAL,Biên gộp ngày thấp nhất -57.46%
+order_items vs products,unit_price vs price,Giá bán khác giá niêm yết,714593,99.989,HIGH,unit_price khác products.price quá 0.01
+order_items,discount_amount,Chiết khấu > giá trị dòng hàng,0,0.0,LOW,discount_amount > quantity*unit_price
+payments vs order_items,payment_value,Lệch thanh toán nếu cộng phí ship,402126,62.158,INFO,"payment_value khớp tiền hàng net ở 646,945/646,945 đơn -> payments không gồm phí ship"
+returns vs order_items,return_quantity,Trả hàng phi lý,0,0.0,LOW,0 dòng trả nhiều hơn đã mua; 0 sản phẩm trả không thuộc đơn
+inventory,stock_on_hand / stockout_days / fill_rate / sell_through_rate,Chỉ số tồn kho ngoài miền hợp lệ,0,0.0,MEDIUM,"tồn âm, stockout_days > 31, tỷ lệ ngoài [0, 1]"
+sales vs order_items,Revenue,Định nghĩa: Revenue = doanh thu gộp trước chiết khấu,0,0.0,INFO,"Revenue khớp SUM(quantity*unit_price) (lệch lớn nhất 0.0000%), gồm cả đơn cancelled; cao hơn doanh thu net trung bình 5.17% do chiết khấu"

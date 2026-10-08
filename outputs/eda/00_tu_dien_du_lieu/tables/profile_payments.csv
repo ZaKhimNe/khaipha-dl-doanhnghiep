@@ -1,0 +1,5 @@
+﻿bang,cot,y_nghia,kieu,pct_trong,so_gia_tri_khac_nhau,min,max,vi_du
+payments,order_id,Mã đơn,int64,0.0,646945,1,834397,1 | 2 | 3
+payments,payment_method,Phương thức thanh toán (giống orders.payment_method),str,0.0,5,,,credit_card | cod | paypal
+payments,payment_value,"Số tiền thanh toán = tiền hàng net của đơn (sau chiết khấu, không gồm phí ship)",float64,0.0,595420,389.7,3.316e+05,"7,968 | 7.116e+04 | 3.366e+04"
+payments,installments,"Số kỳ trả góp: 1, 2, 3, 6, 12",int64,0.0,5,1,12,3 | 1 | 12
