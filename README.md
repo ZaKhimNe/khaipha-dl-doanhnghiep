@@ -3,6 +3,8 @@
 Đồ án môn DS317 – Khai phá dữ liệu trong doanh nghiệp, nhóm 8. Đề tài: dự báo doanh thu **tuần × danh mục**
 (Casual, GenZ, Outdoor, Streetwear) cho doanh nghiệp thời trang thương mại điện tử, dữ liệu Datathon 2026 Round 1.
 
+**Thành viên mới:** đọc [docs/HUONG-DAN-THANH-VIEN.md](docs/HUONG-DAN-THANH-VIEN.md) (clone, tải data, cài môi trường, quy tắc làm việc).
+
 ## Đọc EDA theo thứ tự
 
 Mở các notebook trong `notebooks/eda/` (output đã lưu sẵn, không cần chạy lại để đọc):
